@@ -6,7 +6,8 @@
 
 ## Contributors
 
-[me](https://github.com/EwieG) && [axtck](https://github.com/axtck)
+* [EwieG](https://github.com/EwieG)  
+* [axtck](https://github.com/axtck)
 
 ---
 
