@@ -1,18 +1,22 @@
 class Slangetje():
-    def __init__(self, name, size):
+    def __init__(self, name):
         self.name = name
-        self.size = size
+        self.size = 8
         self.alive = True
 
-    def introduce(self):
-        print(f"Snake name: {self.name}\nSnake size: {self.size}")
-        return
+    # grow (default 1)
+    def grow(self, growSize=1):
+        self.size += growSize
 
-    def grow(self):
-        self.size += 1
-
-    def shrink(self):
-        self.size -= 1
+    # shrink (default 1)
+    def shrink(self, shrinkSize=1):
+        self.size -= shrinkSize
 
     def die(self):
-        self.alive = False
+        self.alive = False  # snake dies
+
+    # print status
+    def update_status(self):
+        print(f"Snake name: {self.name}")
+        print(f"Snake size: {self.size}")
+        print(f"Snake life status: {'Alive' if self.alive else 'Death'}")
